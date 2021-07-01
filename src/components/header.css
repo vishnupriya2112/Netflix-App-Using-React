@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient( rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)100%),url('https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-bottom: 8px solid #222;
+}
+.main{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.logo img{
+    width: 150px;
+    height: 100px;
+    margin-left: 20px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+.dropdown-menu{
+    position: relative;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+}
+.dropdown-menu::before{
+    content:"\f0ac";
+    font-family: "FontAwesome";
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+.dropdown{
+    width: 90px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-menu select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+.dropdown-menu select option{
+    background-color: gray;
+}
+.signin{
+    margin-top: 10px;
+}
+.signin a{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.signin a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.card-detail {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 100px;
+    text-align: center;
+    color: white;
+}
+.title h1 {
+    max-width: 640px;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1;
+}
+.sub-title{
+    max-width: 640px;
+    margin: 20px 0;
+}
+.sub-title h2 {
+    text-align: center;
+    font-size: 1.526rem;
+}
+.email-form{
+    max-width: 640px;
+}
+input[type=email] {
+    min-width: 450px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+}
+.form-box form div{
+    position: relative;
+}
+.form-box form div label{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    transition: 0.1s ease;
+    pointer-events: none;
+    color: #757575;
+}
+.form-box input:focus ~ label{
+    color: #757575;
+    top: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.email-form-content{
+    display: flex;
+}
+.email-form h3{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+.field{
+    display: flex;
+    justify-content: center;
+
+}
+::placeholder{
+    font-size: 1rem;
+}
+@media only screen and (min-width: 200px) and (max-width:600px)
+{
+    .main{
+        padding: 0;
+    }
+    .nav-bar{
+        margin-right: 10px;
+    }
+    .card-detail {
+        margin: 20px 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .title h1{
+        font-size: 1.5rem;
+    }
+    .sub-title h2 {
+        font-size: 1rem;
+    }
+    .form-box{
+        padding: 0 20px;
+    }
+    .email-form{
+        width: 300px;
+    }
+    .email-form h3 {
+        margin: 10px 30px;
+        font-size: 0.9rem;
+    }
+    .email-form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    input[type=email] {
+        min-width: 300px;
+        padding: 15px;
+    }
+    input[type=submit] {
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .form-box form div label {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+
+    }
+    .form-box input:focus ~ label{
+        top: 2px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+}
